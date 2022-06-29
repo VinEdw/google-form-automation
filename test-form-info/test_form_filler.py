@@ -44,23 +44,6 @@ data = [
     ("entry.1031444894", "Column 2"),
     ("entry.1031444894", "Column 3"),
     ("entry.1031444894", "Column 4"),
-    # ("entry.1180240828_sentinel", None),
-    # ("entry.862456411_sentinel", None),
-    # ("entry.212265809_sentinel", None),
-    # ("entry.1735764173_sentinel", None),
-    # ("entry.1227466292_sentinel", None),
-    # ("entry.952095125_sentinel", None),
-    # ("entry.1236505173_sentinel", None),
-    # ("entry.393649146_sentinel", None),
-    # ("entry.780191199_sentinel", None),
-    # ("entry.849015232_sentinel", None),
-    # ("entry.1041749011_sentinel", None),
-    # ("entry.768381174_sentinel", None),
-    # ("entry.1031444894_sentinel", None),
-    # ("fvv", 1),
-    # ("partialResponse", '[null,null,"3799704833637637014"]'),
-    # ("pageHistory", 0),
-    # ("fbzx", 3799704833637637014),
 ]
 encoded_data = urllib.parse.urlencode(data).encode()
 headers = {

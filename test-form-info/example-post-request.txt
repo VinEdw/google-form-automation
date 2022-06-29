@@ -1,0 +1,94 @@
+Form URL: https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform
+==================== General ====================
+Request URL: https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/formResponse
+Request Method: POST
+Status Code: 200 
+Remote Address: 142.250.189.14:443
+Referrer Policy: strict-origin-when-cross-origin
+==================== Response Headers ====================
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-encoding: gzip
+content-security-policy: base-uri 'self';object-src 'none';report-uri https://csp.withgoogle.com/csp/forms/prod;script-src 'report-sample' 'nonce-LCpfnM4xjHyp4ZEBDeHK5Q' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval'
+content-type: text/html; charset=utf-8
+date: Wed, 29 Jun 2022 20:55:30 GMT
+expires: Mon, 01 Jan 1990 00:00:00 GMT
+pragma: no-cache
+referrer-policy: strict-origin-when-cross-origin
+server: GSE
+x-content-type-options: nosniff
+x-robots-tag: noindex, nofollow, nosnippet
+x-xss-protection: 1; mode=block
+==================== Request Headers ====================
+:authority: docs.google.com
+:method: POST
+:path: /forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/formResponse
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9
+cache-control: max-age=0
+content-length: 1293
+content-type: application/x-www-form-urlencoded
+cookie: S=spreadsheet_forms=M-oOxn0mwZGrKCATYnMIbOf1YtG44Plm4y_J4JwRewY; COMPASS=spreadsheet_forms=CjIACWuJV9q83IrAaRrCs0RH_uy5iSwfDDzdGffYeuyumZc9IYeTqJbey5nItbbCuzFmHBDTkvOVBho0AAlriVePwZazqs_c4e7iXji-MYCSsiubZ3uc7jgOc28_KtzdqgKXXxtKJopxo9AjydeiLw==; NID=511=lsNapVf8OnVpQO0Z_urwHgvTAG8NAqYvwROPpkS9mJsnyBEx2UB90SGHzPcQxur6rwVlg7_zEz_Z0N5SBbYyYeElx3AoXLQokZ5hTAF999LqQ_O0BliEf6RUyI2fmS-SaJKSxf9BYpgp7xt-rPqoSZy-b1DsMsgtGRn_Kqr6duU
+dnt: 1
+origin: https://docs.google.com
+referer: https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform?fbzx=3799704833637637014
+sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+==================== Form Data ====================
+entry.608154294: Option 2
+entry.289639374: This is my short answer.
+entry.1739314886: This is my long answer.
+entry.280136681_hour: 22
+entry.280136681_minute: 32
+entry.663558137_year: 2022
+entry.663558137_month: 6
+entry.663558137_day: 29
+entry.1180240828: Option 1
+entry.862456411: Option 1
+entry.862456411: Option 3
+entry.862456411.other_option_response: Other option
+entry.862456411: __other_option__
+entry.212265809: 8
+entry.1735764173: Column 1
+entry.1227466292: Column 2
+entry.952095125: Column 3
+entry.1236505173: Column 4
+entry.393649146: Column 3
+entry.780191199: Column 1
+entry.849015232: Column 2
+entry.849015232: Column 3
+entry.1041749011: Column 1
+entry.1041749011: Column 2
+entry.1041749011: Column 3
+entry.768381174: Column 2
+entry.768381174: Column 4
+entry.1031444894: Column 1
+entry.1031444894: Column 2
+entry.1031444894: Column 3
+entry.1031444894: Column 4
+entry.1180240828_sentinel: 
+entry.862456411_sentinel: 
+entry.212265809_sentinel: 
+entry.1735764173_sentinel: 
+entry.1227466292_sentinel: 
+entry.952095125_sentinel: 
+entry.1236505173_sentinel: 
+entry.393649146_sentinel: 
+entry.780191199_sentinel: 
+entry.849015232_sentinel: 
+entry.1041749011_sentinel: 
+entry.768381174_sentinel: 
+entry.1031444894_sentinel: 
+fvv: 1
+partialResponse: [null,null,"3799704833637637014"]
+pageHistory: 0
+fbzx: 3799704833637637014

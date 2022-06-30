@@ -42,6 +42,8 @@ def question_type_id_to_string(id):
             return "title_and_description"
         case 7:
             return "grid"
+        case 8:
+            return "section"
         case 9:
             return "date"
         case 10:

@@ -69,6 +69,7 @@ def parse_form_json(form_json):
     for question in questions:
         question_info = {}
         question_info["title"] = question[1]
+        question_info["description"] = question[2]
         question_info["type"] = question_type_id_to_string(question[3])
         match question_info["type"]:
             case "short_answer" | "paragraph" | "date" | "time":

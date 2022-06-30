@@ -91,3 +91,5 @@ if __name__ == "__main__":
     form_json = get_form_json(url)
     form_info = parse_form_json(form_json)
     print(form_info)
+    for question in form_info["questions"]:
+        print(question)

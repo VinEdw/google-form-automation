@@ -1,0 +1,86 @@
+[
+    [
+        486307070, "Multiple choice grid (required)", null, 7,
+        [
+            [ 1720582993, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 1" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 1369703136, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 2" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 1455408995, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 3" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 869491698, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 4" ], null, null, null, null, null, null, null, [ 0 ] ]
+        ],
+        null, null, null, null, null, null, [ null, "Multiple choice grid (required)" ]
+    ],
+    [
+        1047717708, "Multiple choice grid (required, one per column)", null, 7,
+        [
+            [ 1410996421, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 1" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 885884348, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 2" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 431610098, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 3" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 933181544, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 4" ], null, null, null, null, null, null, null, [ 0 ] ]
+        ],
+        null, null, null, [ [ 8, 205 ] ], null, null, [ null, "Multiple choice grid (required, one per column)" ]
+    ],
+    [
+        1981846431, "Multiple choice grid (optional)", null, 7,
+        [
+            [ 196750810, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 1" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 635776176, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 2" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 2007090867, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 3" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 265127650, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 4" ], null, null, null, null, null, null, null, [ 0 ] ]
+        ],
+        null, null, null, null, null, null, [ null, "Multiple choice grid (optional)" ]
+    ],
+    [
+        1794017731, "Multiple choice grid (optional, one per column)", null, 7,
+        [
+            [ 325506791, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 1" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 3044083, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 2" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 1998513351, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 3" ], null, null, null, null, null, null, null, [ 0 ] ],
+            [ 1297567580, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 4" ], null, null, null, null, null, null, null, [ 0 ] ]
+        ],
+        null, null, null, [ [ 8, 205 ] ], null, null, [ null, "Multiple choice grid (optional, one per column)" ]
+    ],
+    [
+        1331489850, "Break", "This break is to help me look better", 6, null, null, null, null, null, null, null,
+        [ null, "Break" ], [ null, "This break is to help me look better" ]
+    ],
+    [
+        2072483041, "Checkbox grid (required)", null, 7,
+        [
+            [ 587087496, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 1" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 497107337, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 2" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 1168016116, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 3" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 502111134, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 4" ], null, null, null, null, null, null, null, [ 1 ] ]
+        ],
+        null, null, null, null, null, null, [ null, "Checkbox grid (required)" ]
+    ],
+    [
+        531547790, "Checkbox grid (required, one per column)", null, 7,
+        [
+            [ 2140824394, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 1" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 1727949324, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 2" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 295781905, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 3" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 2007042390, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 1, [ "Row 4" ], null, null, null, null, null, null, null, [ 1 ] ]
+        ],
+        null, null, null, [ [ 8, 205 ] ], null, null, [ null, "Checkbox grid (required, one per column)" ]
+    ],
+    [
+        1263331377, "Checkbox grid (optional)", null, 7,
+        [
+            [ 19689339, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 1" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 2019198307, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 2" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 1660547126, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 3" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 1870890500, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 4" ], null, null, null, null, null, null, null, [ 1 ] ]
+        ],
+        null, null, null, null, null, null, [ null, "Checkbox grid (optional)" ]
+    ],
+    [
+        712732345, "Checkbox grid (optional, one per column)", null, 7,
+        [
+            [ 104706427, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 1" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 987658796, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 2" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 1114097660, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 3" ], null, null, null, null, null, null, null, [ 1 ] ],
+            [ 716970273, [ [ "Column 1" ], [ "Column 2" ], [ "Column 3" ], [ "Column 4" ], [ "Column 5" ] ], 0, [ "Row 4" ], null, null, null, null, null, null, null, [ 1 ] ]
+        ],
+        null, null, null, [ [ 8, 205 ] ], null, null, [ null, "Checkbox grid (optional, one per column)" ]
+    ]
+]

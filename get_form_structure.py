@@ -79,8 +79,6 @@ def parse_form_json(form_json):
                 question_info["entry_id"] = question[4][0][0]
                 question_info["choices"] = [choice[0] for choice in question[4][0][1]]
                 question_info["required"] = bool(question[4][0][2])
-            case "title_and_description":
-                question_info["description"] = question[2]
             case "grid":
                 question_info["entry_ids"] = [row[0] for row in question[4]]
                 question_info["rows"] = [row[3][0] for row in question[4]]

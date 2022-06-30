@@ -35,4 +35,5 @@ if __name__ == "__main__":
     url = "https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform"
     # url = input("Please input the url for the Google Form.\n")
     form_json = get_form_json(url)
-    print(form_json)
+    form_info = parse_form_json(form_json)
+    print(form_info)

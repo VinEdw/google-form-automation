@@ -20,6 +20,33 @@ def get_form_json(url: str):
     info = script.text[27:-1]
     return json.loads(info)
 
+def question_type_id_to_string(id):
+    """
+    Each question is given a number to identify its type.
+    This function takes in that id and translates it to a string representing that type.
+    """
+    match id:
+        case 0:
+            return "short_answer"
+        case 1:
+            return "paragraph"
+        case 2:
+            return "multiple_choice"
+        case 3:
+            return "dropdown"
+        case 4:
+            return "checkboxes"
+        case 5:
+            return "linear_scale"
+        case 7:
+            return "grid"
+        case 9:
+            return "date"
+        case 10:
+            return "time"
+        case _:
+            return "unknown"
+
 def parse_form_json(form_json):
     """
     Turn the extracted JSON from the Google Form into a more readable form.

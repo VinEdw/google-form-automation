@@ -58,6 +58,30 @@ def parse_form_json(form_json):
     form_info = {}
     form_info["title"] = form_json[3]
     form_info["description"] = form_json[1][0]
+    form_info["id"] = form_json[14]
+    form_info["view_url"] = f"https://docs.google.com/forms/d/{form_info['id']}/viewform"
+    form_info["post_url"] = f"https://docs.google.com/forms/d/{form_info['id']}/formResponse"
+
+    form_info["questions"] = []
+    questions = form_json[1][1]
+    for question in questions:
+        question_info = {}
+        question_info["title"] = question[1]
+        question_info["type"] = question_type_id_to_string(question[3])
+        match question_info["type"]:
+            case "short_answer" | "paragraph" | "date" | "time":
+                question_info["entry_id"] = question[4][0][0]
+            case "multiple_choice" | "dropdown" | "checkboxes" | "linear_scale":
+                question_info["entry_id"] = question[4][0][0]
+                question_info["choices"] = [choice[0] for choice in question[4][0][1]]
+            case "title_and_description":
+                question_info["description"] = question[2]
+            case "grid":
+                question_info["entry_ids"] = [row[0] for row in question[4]]
+                question_info["rows"] = [row[3][0] for row in question[4]]
+                question_info["columns"] = [column[0] for column in question[4][0][1]]
+
+        form_info["questions"].append(question_info)
 
     return form_info
 

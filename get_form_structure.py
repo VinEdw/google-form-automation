@@ -28,6 +28,7 @@ def parse_form_json(form_json):
     """
     form_info = {}
     form_info["title"] = form_json[3]
+    form_info["description"] = form_json[1][0]
 
     return form_info
 

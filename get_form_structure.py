@@ -38,6 +38,8 @@ def question_type_id_to_string(id):
             return "checkboxes"
         case 5:
             return "linear_scale"
+        case 6:
+            return "title_and_description"
         case 7:
             return "grid"
         case 9:

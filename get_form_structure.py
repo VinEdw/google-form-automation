@@ -20,6 +20,17 @@ def get_form_json(url: str):
     info = script.text[27:-1]
     return json.loads(info)
 
+def parse_form_json(form_json):
+    """
+    Turn the extracted JSON from the Google Form into a more readable form.
+    The data stored in the Form HTML, while structured, is undocumented and it is unclear what setting each item corresponds to.
+    This function can be updated as those utilities are inferred.
+    """
+    form_info = {}
+    form_info["title"] = form_json[3]
+
+    return form_info
+
 if __name__ == "__main__":
     url = "https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform"
     # url = input("Please input the url for the Google Form.\n")

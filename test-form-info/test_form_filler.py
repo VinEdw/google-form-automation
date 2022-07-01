@@ -3,6 +3,8 @@ import urllib.request, urllib.parse
 url = "https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/formResponse"
 
 data = [
+    # If "Collect email addresses" is turned on
+    # ("emailAddress", "mister.man489@gmail.com"),
     # Multiple choice
     ("entry.1180240828", "Option 1"),
     # Checkboxes
@@ -47,7 +49,7 @@ data = [
 ]
 encoded_data = urllib.parse.urlencode(data).encode()
 headers = {
-    "referer": "https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform",
+    "referer": "https://docs.google.com/forms/d/e/1FAIpQLSfZRulAIAelub72Ip3qFhXyTkTGMqFLxRoYwNb2sCEjBylMhA/viewform",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
 }
 

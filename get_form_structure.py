@@ -119,6 +119,7 @@ def summarize_form_info(form_info) -> str:
     add(double_line)
     add(form_info["title"])
     add(form_info["description"])
+    add(short_line)
     add(f"URL: {form_info['view_url']}")
     add(f"Question Count: {len([q for q in form_info['questions'] if (q['type'] not in ('title_and_description', 'section', 'unknown'))])}")
     add(double_line)
@@ -157,7 +158,7 @@ def summarize_form_info(form_info) -> str:
                     case "multiple_choice_grid" | "checkbox_grid":
                         add(f"Rows: {question['rows']}")
                         add(f"Columns: {question['columns']}")
-        summary_str += "\n"
+        summary_str += "\n\n"
 
     return summary_str
 

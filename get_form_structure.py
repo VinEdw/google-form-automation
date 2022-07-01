@@ -63,6 +63,7 @@ def parse_form_json(form_json):
     form_info["id"] = form_json[14]
     form_info["view_url"] = f"https://docs.google.com/forms/d/{form_info['id']}/viewform"
     form_info["post_url"] = f"https://docs.google.com/forms/d/{form_info['id']}/formResponse"
+    form_info["collect_email_addresses"] = bool(form_json[1][10][4])
 
     form_info["questions"] = []
     questions = form_json[1][1]
@@ -116,6 +117,7 @@ def summarize_form_info(form_info) -> str:
     add(form_info["title"])
     add(form_info["description"])
     add(short_line)
+    add(f"Collect Email Addresses: {form_info['collect_email_addresses']}")
     add(f"URL: {form_info['view_url']}")
     add(f"Question Count: {len([q for q in form_info['questions'] if (q['type'] not in ('title_and_description', 'section', 'unknown'))])}")
     add(double_line)

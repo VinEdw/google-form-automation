@@ -106,9 +106,62 @@ def form_info_from_url(url: str):
     form_info = parse_form_json(form_json)
     return form_info
 
+def summarize_form_info(form_info) -> str:
+    """Return a string summarizing the key info regarding the structure and content of the form."""
+    summary_str = ""
+    double_line = "<" + 50 * "=" + ">"
+    single_line = "<" + 50 * "-" + ">"
+    short_line = 20 * "-"
+    def add(text):
+        nonlocal summary_str
+        if text:
+            summary_str += str(text) + "\n"
+    add(double_line)
+    add(form_info["title"])
+    add(form_info["description"])
+    add(f"URL: {form_info['view_url']}")
+    add(f"Question Count: {len([q for q in form_info['questions'] if (q['type'] not in ('title_and_description', 'section', 'unknown'))])}")
+    add(double_line)
+    for question in form_info["questions"]:
+        match question["type"]:
+            case "section":
+                add(single_line)
+                add(f"Section: {question['title']}")
+                add(question["description"])
+                add(single_line)
+            case "title_and_description":
+                add("\n")
+                add(question["title"])
+                add(question["description"])
+            case _:
+                add(f"Type: {question['type']}")
+                add("Required" if question["required"] else "Optional")
+                add(question.get("entry_id"))
+                add(question.get("entry_ids"))
+                add(short_line)
+                add(question["title"])
+                add(question["description"])
+                match question["type"]:
+                    case "short_answer" | "paragraph":
+                        add("...")
+                    case "date":
+                        add("YYYY-MM-DD")
+                    case "time":
+                        add("HH:MM")
+                    case "multiple_choice" | "dropdown" | "checkboxes":
+                        for choice in question["choices"]:
+                            add(f"- {choice}")
+                    case "linear_scale":
+                        add(f"{question['choices'][0]} {question['low_label'] if question['low_label'] else ''}")
+                        add(f"{question['choices'][-1]} {question['high_label'] if question['high_label'] else ''}")
+                    case "multiple_choice_grid" | "checkbox_grid":
+                        add(f"Rows: {question['rows']}")
+                        add(f"Columns: {question['columns']}")
+        summary_str += "\n"
+
+    return summary_str
+
 if __name__ == "__main__":
     url = "https://docs.google.com/forms/d/e/1FAIpQLScykTPZxLRtTXHAxxVN8l8RVPxzcfokD_HMkc5Hbio4sq3p_g/viewform"
     form_info = form_info_from_url(url)
-    print(form_info)
-    for question in form_info["questions"]:
-        print(question)
+    print(summarize_form_info(form_info))

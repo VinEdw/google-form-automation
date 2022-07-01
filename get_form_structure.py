@@ -84,6 +84,8 @@ def parse_form_json(form_json):
                 question_info["rows"] = [row[3][0] for row in question[4]]
                 question_info["columns"] = [column[0] for column in question[4][0][1]]
                 question_info["type"] = "checkbox_grid" if question[4][0][11][0] else "multiple_choice_grid"
+                question_info["shuffle_row_order"] = bool(question[7])
+                question_info["one_per_column"] = (question[8][0] == [8, 205] if question[8] else False)
                 question_info["required"] = bool(question[4][0][2])
 
         form_info["questions"].append(question_info)

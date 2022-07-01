@@ -127,7 +127,6 @@ def summarize_form_info(form_info) -> str:
                 add(question["description"])
                 add(single_line)
             case "title_and_description":
-                add("\n")
                 add(question["title"])
                 add(question["description"])
             case _:

@@ -75,10 +75,16 @@ def parse_form_json(form_json):
             case "short_answer" | "paragraph" | "date" | "time":
                 question_info["entry_id"] = question[4][0][0]
                 question_info["required"] = bool(question[4][0][2])
-            case "multiple_choice" | "dropdown" | "checkboxes" | "linear_scale":
+            case "multiple_choice" | "dropdown" | "checkboxes":
                 question_info["entry_id"] = question[4][0][0]
                 question_info["choices"] = [choice[0] for choice in question[4][0][1]]
                 question_info["required"] = bool(question[4][0][2])
+            case "linear_scale":
+                question_info["entry_id"] = question[4][0][0]
+                question_info["choices"] = [choice[0] for choice in question[4][0][1]]
+                question_info["required"] = bool(question[4][0][2])
+                question_info["low_label"] = question[4][0][3][0]
+                question_info["high_label"] = question[4][0][3][1]
             case "grid":
                 question_info["entry_ids"] = [row[0] for row in question[4]]
                 question_info["rows"] = [row[3][0] for row in question[4]]

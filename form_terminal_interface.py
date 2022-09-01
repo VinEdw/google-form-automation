@@ -128,7 +128,7 @@ def fill_form(form_info) -> list[tuple[str, str]]:
                     keeping = prompt_y_n(option or "Other...")
                     if keeping:
                         if option != "":
-                            data.append((f"entry.{question['entry_id']}", question["choices"][choice_index]))
+                            data.append((f"entry.{question['entry_id']}", option))
                         else:
                             text = input("Input Other Option\n>>> ")
                             data.append((f"entry.{question['entry_id']}.other_option_response", text))
@@ -216,6 +216,6 @@ if __name__ == "__main__":
                     post_to_form(form_info, form_data)
     except KeyboardInterrupt:
         print("Keyboard Interruput")
-    except Exception as e:
-        print(e)
+    # except Exception as e:
+    #     print(e)
     print("Exiting")

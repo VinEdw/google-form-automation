@@ -64,10 +64,10 @@ def prompt_between(low: int, high: int, description: str = None) -> int:
             break
         try:
             num = int(num)
+            if low <= num <= high:
+                break
         except ValueError:
-            print("Invalid Input")
-        if low <= num <= high:
-            break
+            pass
         print("Invalid Input")
     return num
 
